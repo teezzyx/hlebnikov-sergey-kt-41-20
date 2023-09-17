@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "lCmhXRzTiwiqs/d4Qn07jUWynLCl5XN1yWWIWMYWE+zWqSJ09DeLoK06KFHrLnF3gH2AKdL9eNkT3SFXlrF0dQ==",
+  "dgSpecHash": "RUETVajTLBcJVrGTv+1w+lYX+WUK7H9gNq21jTLvkIu7CBX5xY/cImoFPbXFQ6yVaKDEz1U6SwBchQMBv8lnXQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\2020\\source\\repos\\hlebnikov-sergey-kt-41-20\\Git\\Git.csproj",
   "expectedPackageFiles": [
@@ -15,6 +15,7 @@
     "C:\\Users\\2020\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.11\\microsoft.entityframeworkcore.7.0.11.nupkg.sha512",
     "C:\\Users\\2020\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.11\\microsoft.entityframeworkcore.abstractions.7.0.11.nupkg.sha512",
     "C:\\Users\\2020\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\7.0.11\\microsoft.entityframeworkcore.analyzers.7.0.11.nupkg.sha512",
+    "C:\\Users\\2020\\.nuget\\packages\\microsoft.entityframeworkcore.inmemory\\7.0.11\\microsoft.entityframeworkcore.inmemory.7.0.11.nupkg.sha512",
     "C:\\Users\\2020\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\7.0.11\\microsoft.entityframeworkcore.relational.7.0.11.nupkg.sha512",
     "C:\\Users\\2020\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.11\\microsoft.entityframeworkcore.sqlserver.7.0.11.nupkg.sha512",
     "C:\\Users\\2020\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

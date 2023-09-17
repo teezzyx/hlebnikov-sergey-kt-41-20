@@ -208,6 +208,22 @@
           "lib/netstandard2.0/_._": {}
         }
       },
+      "Microsoft.EntityFrameworkCore.InMemory/7.0.11": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.11"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.EntityFrameworkCore.Relational/7.0.11": {
         "type": "package",
         "dependencies": {
@@ -1418,6 +1434,20 @@
         "lib/netstandard2.0/_._",
         "microsoft.entityframeworkcore.analyzers.7.0.11.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
+      ]
+    },
+    "Microsoft.EntityFrameworkCore.InMemory/7.0.11": {
+      "sha512": "Wc0YniYccjbzg8URydo3zbVUR0NLdvpIPU5qO0Vyvtl2Ty7fFmD6/RfbESjdcnszgiGt417OZiwmiiC+w3hmTA==",
+      "type": "package",
+      "path": "microsoft.entityframeworkcore.inmemory/7.0.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.dll",
+        "lib/net6.0/Microsoft.EntityFrameworkCore.InMemory.xml",
+        "microsoft.entityframeworkcore.inmemory.7.0.11.nupkg.sha512",
+        "microsoft.entityframeworkcore.inmemory.nuspec"
       ]
     },
     "Microsoft.EntityFrameworkCore.Relational/7.0.11": {
@@ -3227,6 +3257,7 @@
     "net7.0": [
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 7.0.11",
       "Microsoft.AspNetCore.OpenApi >= 7.0.11",
+      "Microsoft.EntityFrameworkCore.InMemory >= 7.0.11",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.11",
       "NLog.Web.AspNetCore >= 5.3.4",
       "Swashbuckle.AspNetCore >= 6.5.0"
@@ -3276,6 +3307,10 @@
             "version": "[7.0.11, )"
           },
           "Microsoft.AspNetCore.OpenApi": {
+            "target": "Package",
+            "version": "[7.0.11, )"
+          },
+          "Microsoft.EntityFrameworkCore.InMemory": {
             "target": "Package",
             "version": "[7.0.11, )"
           },
