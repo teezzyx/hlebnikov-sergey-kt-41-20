@@ -4,7 +4,7 @@ namespace Git.Models
 {
     public class JobPosts
     {
-        public int ID { get; set; }
+        public int JobpostId { get; set; }
         public string? JobPost { get; set; }
     }
 }

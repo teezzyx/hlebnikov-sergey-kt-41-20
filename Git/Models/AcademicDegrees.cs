@@ -4,7 +4,8 @@ namespace Git.Models
 {
     public class AcademicDegrees
     {
-        public int ID { get; set; }
+        public int DegreeId { get; set; }
         public string? Degree { get; set; }
+        public int? TeacherId { get; set; }
     }
 }

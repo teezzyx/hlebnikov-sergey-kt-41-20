@@ -1,18 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using Git.Models;
 using Microsoft.EntityFrameworkCore;
-namespace Git.Models
+namespace Git.Data
 {
-    public class Context : DbContext
+    public class TeachersDbContext : DbContext
     {
-        public Context(DbContextOptions<Context> options)
+        public TeachersDbContext(DbContextOptions<TeachersDbContext> options)
         : base(options)
         { }
-        public DbSet <AcademicDegrees> AcademicDegrees { get; set; } = null!;
+        public DbSet<AcademicDegrees> AcademicDegrees { get; set; } = null!;
         public DbSet<Departments> Departments { get; set; } = null!;
         public DbSet<Disciplines> Disciplines { get; set; } = null!;
-        public DbSet <JobLoads> JobLoads { get; set; } = null!;
-        public DbSet <JobPosts> JobPosts { get; set; } = null!;
+        public DbSet<JobLoads> JobLoads { get; set; } = null!;
+        public DbSet<JobPosts> JobPosts { get; set; } = null!;
         public DbSet<Teachers> Teachers { get; set; } = null!;
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

@@ -1,7 +1,8 @@
 using NLog;
 using NLog.Web;
 using Microsoft.EntityFrameworkCore;
-using Git.Models;
+using Git.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 var logger = LogManager.Setup().LoadConfigurationFromAppSettings().GetCurrentClassLogger();
@@ -12,7 +13,7 @@ try
     builder.Host.UseNLog();
 
     builder.Services.AddControllers();
-    builder.Services.AddDbContext<Context>(opt =>
+    builder.Services.AddDbContext<TeachersDbContext>(opt =>
     opt.UseInMemoryDatabase("ContextList"));
     // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
     builder.Services.AddEndpointsApiExplorer();

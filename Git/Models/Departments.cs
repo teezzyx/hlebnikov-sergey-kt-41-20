@@ -4,8 +4,8 @@ namespace Git.Models
 {
     public class Departments
     {
-        public int ID { get; set; }
+        public int DepartmentId { get; set; }
         public string? Department { get; set; }
-        public ICollection <Teachers> Teacher { get; set; }
+        public ICollection <Teachers>? Teacher { get; set; }
     }
 }
