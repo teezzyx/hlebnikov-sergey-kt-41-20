@@ -1,6 +1,6 @@
 ﻿using System.Net;
 
-namespace Git.MiddleWares
+namespace hlebnikov_sergey_kt_41_20.MiddleWares
 {
     public class ExceptionHandlerMiddleware
     {

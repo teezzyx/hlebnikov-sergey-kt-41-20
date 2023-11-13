@@ -5,13 +5,13 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Git.Data;
-using Git.Models;
+using hlebnikov_sergey_kt_41_20.Data;
+using hlebnikov_sergey_kt_41_20.Models;
 using Microsoft.AspNetCore.Mvc;
-using Git.Interfaces.TeachersInterfaces;
-using Git.Filters.TeachersFilters;
+using hlebnikov_sergey_kt_41_20.Interfaces.TeachersInterfaces;
+using hlebnikov_sergey_kt_41_20.Filters.TeachersFilters;
 
-namespace Git.Controllers
+namespace hlebnikov_sergey_kt_41_20.Controllers
 {
     [ApiController]
     [Route("[controller]")]

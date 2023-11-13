@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text.RegularExpressions;
 
-namespace Git.Models
+namespace hlebnikov_sergey_kt_41_20.Models
 {
     public class Departments
     {
