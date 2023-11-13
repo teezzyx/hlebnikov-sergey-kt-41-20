@@ -13,11 +13,12 @@ try
     builder.Host.UseNLog();
 
     builder.Services.AddControllers();
-    builder.Services.AddDbContext<TeachersDbContext>(opt =>
-    opt.UseInMemoryDatabase("ContextList"));
-    // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+
     builder.Services.AddEndpointsApiExplorer();
     builder.Services.AddSwaggerGen();
+
+    builder.Services.AddDbContext<TeachersDbContext>(opt => opt.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+    // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 
     var app = builder.Build();
 
