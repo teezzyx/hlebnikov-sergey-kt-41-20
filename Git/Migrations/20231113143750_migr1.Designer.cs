@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Git.Migrations
 {
     [DbContext(typeof(TeachersDbContext))]
-    [Migration("20231113112038_migr1")]
+    [Migration("20231113143750_migr1")]
     partial class migr1
     {
         /// <inheritdoc />
@@ -52,7 +52,7 @@ namespace Git.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("DepartmentId"));
 
-                    b.Property<string>("Department")
+                    b.Property<string>("DepartmentName")
                         .HasColumnType("text");
 
                     b.HasKey("DepartmentId");

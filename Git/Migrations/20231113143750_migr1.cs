@@ -32,7 +32,7 @@ namespace Git.Migrations
                 {
                     DepartmentId = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    Department = table.Column<string>(type: "text", nullable: true)
+                    DepartmentName = table.Column<string>(type: "text", nullable: true)
                 },
                 constraints: table =>
                 {

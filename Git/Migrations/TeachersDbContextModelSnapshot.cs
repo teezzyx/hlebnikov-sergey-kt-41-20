@@ -49,7 +49,7 @@ namespace Git.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("DepartmentId"));
 
-                    b.Property<string>("Department")
+                    b.Property<string>("DepartmentName")
                         .HasColumnType("text");
 
                     b.HasKey("DepartmentId");

@@ -2,6 +2,9 @@ using NLog;
 using NLog.Web;
 using Microsoft.EntityFrameworkCore;
 using Git.Data;
+using Microsoft.Build.Framework;
+
+using static Git.ServiceExtensions.ServiceExtensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +22,7 @@ try
 
     builder.Services.AddDbContext<TeachersDbContext>(opt => opt.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
     // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+    builder.Services.AddServices();
 
     var app = builder.Build();
 
