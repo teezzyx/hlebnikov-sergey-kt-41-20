@@ -2,6 +2,7 @@ using NLog;
 using NLog.Web;
 using Microsoft.EntityFrameworkCore;
 using Git.Data;
+using Git.MiddleWares;
 using Microsoft.Build.Framework;
 
 using static Git.ServiceExtensions.ServiceExtensions;
@@ -32,7 +33,7 @@ try
         app.UseSwagger();
         app.UseSwaggerUI();
     }
-
+    app.UseMiddleware<ExceptionHandlerMiddleware>();
     app.UseAuthorization();
 
     app.MapControllers();
